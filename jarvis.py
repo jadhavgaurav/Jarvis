@@ -11,7 +11,6 @@ import pywhatkit
 import requests
 import pyjokes
 
-
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[0].id)
@@ -204,7 +203,6 @@ if __name__ == '__main__':
             speak("opening snipping Tool")
 
         
-
         elif 'open powershel' in query:
             powerPath = "C:\\Users\\jayen\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Windows PowerShell\\Windows PowerShell"
             os.startfile(powerPath)
@@ -271,14 +269,14 @@ if __name__ == '__main__':
 
 
 
-        # elif 'play music' in query:
-        #     n = random.choice(0)
-        #     print(n)
-        #     music_dir = 'C:\\gj\\music'
-        #     songs = os.listdir(music_dir)
-        #     # speak("Which song do you want to play")
-        #     os.startfile(os.path.join(music_dir, songs[n]))
-        #     print(songs)
+        elif 'play music' in query:
+            n = random.choice(0)
+            print(n)
+            music_dir = 'C:\\gj\\music'
+            songs = os.listdir(music_dir)
+            # speak("Which song do you want to play")
+            os.startfile(os.path.join(music_dir, songs[n]))
+            print(songs)
 
 #PLAY SONGS ON YOUTUBE#
         elif 'play' in query:
